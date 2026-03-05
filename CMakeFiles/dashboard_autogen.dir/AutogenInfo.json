@@ -377,7 +377,21 @@
 	"CMAKE_SOURCE_DIR" : "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Inc/DashboardWindow.h",
+			"MU",
+			"C2K46SIDN7/moc_DashboardWindow.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Inc/Sensor.h",
+			"MU",
+			"C2K46SIDN7/moc_Sensor.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/dashboard_autogen/include",
 	"MOC_COMPILATION_FILE" : "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/dashboard_autogen/mocs_compilation.cpp",
@@ -400,6 +414,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Inc",
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/include/x86_64-linux-gnu/qt6",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
@@ -440,6 +455,16 @@
 	"SETTINGS_FILE" : "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/CMakeFiles/dashboard_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/DashboardWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/Sensor.cpp",
+			"MU",
+			null
+		],
 		[
 			"/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/main.cpp",
 			"MU",

@@ -97,16 +97,48 @@ CMakeFiles/dashboard.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dashboard.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/main.cpp" -o CMakeFiles/dashboard.dir/main.cpp.s
 
+CMakeFiles/dashboard.dir/Src/Sensor.cpp.o: CMakeFiles/dashboard.dir/flags.make
+CMakeFiles/dashboard.dir/Src/Sensor.cpp.o: Src/Sensor.cpp
+CMakeFiles/dashboard.dir/Src/Sensor.cpp.o: CMakeFiles/dashboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dashboard.dir/Src/Sensor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dashboard.dir/Src/Sensor.cpp.o -MF CMakeFiles/dashboard.dir/Src/Sensor.cpp.o.d -o CMakeFiles/dashboard.dir/Src/Sensor.cpp.o -c "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/Sensor.cpp"
+
+CMakeFiles/dashboard.dir/Src/Sensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dashboard.dir/Src/Sensor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/Sensor.cpp" > CMakeFiles/dashboard.dir/Src/Sensor.cpp.i
+
+CMakeFiles/dashboard.dir/Src/Sensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dashboard.dir/Src/Sensor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/Sensor.cpp" -o CMakeFiles/dashboard.dir/Src/Sensor.cpp.s
+
+CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o: CMakeFiles/dashboard.dir/flags.make
+CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o: Src/DashboardWindow.cpp
+CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o: CMakeFiles/dashboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o -MF CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o.d -o CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o -c "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/DashboardWindow.cpp"
+
+CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/DashboardWindow.cpp" > CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.i
+
+CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/Src/DashboardWindow.cpp" -o CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.s
+
 # Object files for target dashboard
 dashboard_OBJECTS = \
 "CMakeFiles/dashboard.dir/dashboard_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/dashboard.dir/main.cpp.o"
+"CMakeFiles/dashboard.dir/main.cpp.o" \
+"CMakeFiles/dashboard.dir/Src/Sensor.cpp.o" \
+"CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o"
 
 # External object files for target dashboard
 dashboard_EXTERNAL_OBJECTS =
 
 dashboard: CMakeFiles/dashboard.dir/dashboard_autogen/mocs_compilation.cpp.o
 dashboard: CMakeFiles/dashboard.dir/main.cpp.o
+dashboard: CMakeFiles/dashboard.dir/Src/Sensor.cpp.o
+dashboard: CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o
 dashboard: CMakeFiles/dashboard.dir/build.make
 dashboard: /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.2.4
 dashboard: /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.2.4
@@ -117,7 +149,7 @@ dashboard: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4
 dashboard: /usr/lib/x86_64-linux-gnu/libGLX.so
 dashboard: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 dashboard: CMakeFiles/dashboard.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dashboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Zach Taylor/github/Take-Home-Assessment-/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable dashboard"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dashboard.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

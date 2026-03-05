@@ -1,3 +1,6 @@
+#ifndef SENSOR_H
+#define SENSOR_H
+
 #include <QObject>
 #include <QTimer>
 
@@ -16,3 +19,5 @@ private:
     QTimer *timer;
     void generate();
 };
+
+#endif

@@ -1,19 +1,29 @@
 cmake_minimum_required(VERSION 3.16)
-project(TakeHomeDashboard)
+project(DeviceMonitorDashboard)
 
-# Qt requires C++17 or later
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Enable Qt's auto-compilers for handling signals/slots and UI
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# Add Charts to the list of required components
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Charts)
 
-# Create the executable from your source file
-add_executable(dashboard main.cpp)
+# Explicitly add the headers from the Inc folder so AUTOMOC sees them
+add_executable(dashboard
+    main.cpp
+    Src/Sensor.cpp
+    Src/DashboardWindow.cpp
+    Inc/Sensor.h
+    Inc/DashboardWindow.h
+)
 
-# Link the Charts library to your executable
-target_link_libraries(dashboard PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Charts)
+target_include_directories(dashboard PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Inc)
+
+target_link_libraries(dashboard PRIVATE 
+    Qt6::Core 
+    Qt6::Gui 
+    Qt6::Widgets 
+    Qt6::Charts
+)

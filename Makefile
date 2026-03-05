@@ -142,6 +142,54 @@ dashboard_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard_autogen.dir/build.make CMakeFiles/dashboard_autogen.dir/build
 .PHONY : dashboard_autogen/fast
 
+Src/DashboardWindow.o: Src/DashboardWindow.cpp.o
+.PHONY : Src/DashboardWindow.o
+
+# target to build an object file
+Src/DashboardWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.o
+.PHONY : Src/DashboardWindow.cpp.o
+
+Src/DashboardWindow.i: Src/DashboardWindow.cpp.i
+.PHONY : Src/DashboardWindow.i
+
+# target to preprocess a source file
+Src/DashboardWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.i
+.PHONY : Src/DashboardWindow.cpp.i
+
+Src/DashboardWindow.s: Src/DashboardWindow.cpp.s
+.PHONY : Src/DashboardWindow.s
+
+# target to generate assembly for a file
+Src/DashboardWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/DashboardWindow.cpp.s
+.PHONY : Src/DashboardWindow.cpp.s
+
+Src/Sensor.o: Src/Sensor.cpp.o
+.PHONY : Src/Sensor.o
+
+# target to build an object file
+Src/Sensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/Sensor.cpp.o
+.PHONY : Src/Sensor.cpp.o
+
+Src/Sensor.i: Src/Sensor.cpp.i
+.PHONY : Src/Sensor.i
+
+# target to preprocess a source file
+Src/Sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/Sensor.cpp.i
+.PHONY : Src/Sensor.cpp.i
+
+Src/Sensor.s: Src/Sensor.cpp.s
+.PHONY : Src/Sensor.s
+
+# target to generate assembly for a file
+Src/Sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dashboard.dir/build.make CMakeFiles/dashboard.dir/Src/Sensor.cpp.s
+.PHONY : Src/Sensor.cpp.s
+
 dashboard_autogen/mocs_compilation.o: dashboard_autogen/mocs_compilation.cpp.o
 .PHONY : dashboard_autogen/mocs_compilation.o
 
@@ -200,6 +248,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dashboard_autogen"
 	@echo "... dashboard"
+	@echo "... Src/DashboardWindow.o"
+	@echo "... Src/DashboardWindow.i"
+	@echo "... Src/DashboardWindow.s"
+	@echo "... Src/Sensor.o"
+	@echo "... Src/Sensor.i"
+	@echo "... Src/Sensor.s"
 	@echo "... dashboard_autogen/mocs_compilation.o"
 	@echo "... dashboard_autogen/mocs_compilation.i"
 	@echo "... dashboard_autogen/mocs_compilation.s"

@@ -1,4 +1,4 @@
-#include "../Inc/Sensor.h"
+#include "Sensor.h"
 #include <QRandomGenerator>
 
 Sensor::Sensor(QObject *parent) : QObject(parent) 
