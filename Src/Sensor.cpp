@@ -14,7 +14,8 @@ void Sensor::toggle()
     if (timer->isActive()) 
     {
         timer->stop();
-    } else 
+    } 
+    else 
     {
         timer->start();
     }

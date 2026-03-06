@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QSlider>
+#include <QComboBox>
 #include <QChart>
 #include <QChartView>
 #include <QLineSeries>
@@ -29,6 +30,7 @@ private:
     QLabel *statusLabel;
     QPushButton *toggleButton;
     QSlider *warningSlider;
+    QComboBox *sensorSelector;
 
     QChart *chart;
     QLineSeries *chartSeries;
@@ -38,6 +40,7 @@ private:
     int tickCount;
     int warningThreshold;
     bool isRunning;
+    int currentChartSensor; // Tracks which sensor is actively being graphed
 
     void setupUI();
     void setupChart();
